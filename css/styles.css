@@ -1,0 +1,242 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; border: none;}
+img { max-width: 100%;}
+a { text-decoration: none;}
+nav li { list-style-type: none;}
+:root {
+    --color-black: #111;
+    --color-white: #fff;
+    --color-grey: #707070;
+    --color-blue: #00577F;
+    --color-orange: #CB871A;
+    --text-primary: 'Muli', sans-serif;
+    --text-secondary: 'Ubuntu', sans-serif;
+}
+html {
+    font-size: 16px;
+}
+body {
+    color: var(--color-black);
+    font-family: var(--text-secondary);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-white);
+    z-index: 10;
+}
+header img {
+    width: 290px;
+    margin-top: 5px;
+}
+.contact{
+    background-color: var(--color-blue);
+    width: 305px;
+    padding: 20px 0;
+    border-radius: 0 0 20px 20px;
+}
+.contact a {
+    color: var(--color-white);
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.contact a:first-child {
+    font-size: 2.06em;
+}
+.contact a:first-child::before{
+    content: url(../img/Capa-2-10.svg);
+    position: relative;
+    top: 6px;
+    left: -6px;
+}
+.contact a:last-child {
+    font-size: 1.18em;
+}
+.contact a:last-child::before {
+    content: url(../img/Capa-2-9.svg);
+    position: relative;
+    top: 3px;
+    left: -6px;
+}
+aside {
+    background-color: var(--color-blue);
+    width: 320px;
+    border-radius: 0 20px 20px 0;
+    padding-top: 15px;
+    padding-bottom: 58px;
+    position: fixed;
+}
+.btn-burger,
+.btn-close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.btn-burger span {
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-white);
+    display: block;
+}
+.btn-burger::before,
+.btn-burger::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-white);
+    display: block;
+    position: relative;
+    top: -9px;
+}
+.btn-burger::after {
+    top: 9px;
+}
+.btn-close::before,
+.btn-close::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-white);
+    display: block;
+}
+.btn-close::before {
+    transform: rotate(45deg);
+}
+.btn-close::after {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+}
+nav a {
+    display: block;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-family: var(--text-primary);
+    font-size: 1.12em;
+    padding: 14px 0;
+    border-top: 5px solid var(--color-white);
+    position: relative;
+    width: 320px;
+    padding-left: 70px;
+    transition: all .5s ease-in-out;
+}
+nav a:hover {
+    width: 330px;
+    padding-left: 80px;
+    transition: all .3s ease-in-out;
+}
+nav a:last-child {
+    border-bottom: 5px solid var(--color-white);
+}
+nav a::before {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    transition: left .5s ease-in-out;
+}
+nav a:hover::before {
+    left: 25px;
+    transition: left .3s ease-in-out;
+}
+nav a:nth-child(1)::before {
+    content: url(../img/Capa-2-6.svg);
+    top: 16px;
+}
+nav a:nth-child(2)::before {
+    content: url(../img/Capa-2-5.svg);
+}
+nav a:nth-child(3)::before {
+    content: url(../img/Capa-2.svg);
+}
+nav a:nth-child(4)::before {
+    content: url(../img/Capa-2-1.svg);
+    top: 12px;
+}
+nav a:nth-child(5)::before {
+    content: url(../img/Capa-2-4.svg);
+}
+nav a:nth-child(6)::before {
+    content: url(../img/Capa-2-3.svg);
+}
+nav a:nth-child(7)::before {
+    content: url(../img/Grupo-18.svg);
+    top: 15px;
+}
+nav a:nth-child(8)::before {
+    content: url(../img/Capa-2-2.svg);
+    top: 15px;
+}
+.general-content {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 130px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    padding-left: 320px;
+}
+h1 {
+    width: 100%;
+    font-size: 3.12em;
+    margin-bottom: 45px;
+}
+h1::after {
+    content: "";
+    width: 65%;
+    border-bottom: 8px solid var(--color-blue);
+    display: block;
+    margin-top: 5px;
+}
+h2 {
+    font-family: var(--text-primary);
+    margin-bottom: 7px;
+}
+h3.btn-dropdown {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-family: var(--text-primary);
+    font-size: 1em;
+    font-weight: normal;
+    padding: 18px 23px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h3.btn-dropdown::after {
+    content: url(../img/Capa-2-8.svg);
+}
+h3.btn-dropdown + p {
+    margin-top: 7px;
+}
+p ~ h2 {
+    margin-top: 45px;
+}
+p {
+    margin-bottom: 1em;
+    line-height: 1.35em;
+}
+.text {
+    width: 40%;
+    min-width: 320px;
+}
+.imgs {
+    width: 60%;
+    min-width: 320px;
+    padding: 30px 8%;
+}
+.imgs img:first-child {
+    transform: rotate(6deg);
+}
+.imgs img:last-child {
+    transform: rotate(-6deg);
+}
